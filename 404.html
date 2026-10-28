@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>页面未找到 — CharlotMuff</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/portfolio/assets/favicon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #101110;
+    --elevated: #161817;
+    --text: #e9e6df;
+    --muted: #9a978f;
+    --faint: #6b6962;
+    --accent: #c87f4a;
+    --line: rgba(233, 230, 223, 0.1);
+    --line-strong: rgba(233, 230, 223, 0.2);
+    --font-sans: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+      "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", system-ui,
+      -apple-system, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 2rem 1.25rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 34rem;
+    text-align: center;
+  }
+
+  .code {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 1.5rem;
+  }
+
+  h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 7vw, 3rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  p.desc {
+    margin: 0 0 2.25rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 0.975rem;
+  }
+
+  .divider {
+    height: 1px;
+    background: var(--line);
+    margin: 0 0 2.25rem;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.875rem;
+    padding: 0.75rem 1.75rem;
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid var(--line-strong);
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .btn--primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #17130f;
+  }
+
+  .btn--primary:hover { background: #d98f57; border-color: #d98f57; }
+
+  .btn--ghost { color: var(--text); }
+
+  .btn--ghost:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  .foot {
+    margin: 2.5rem 0 0;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="code">Error 404</p>
+    <h1>页面未找到</h1>
+    <p class="desc">你访问的页面不存在或已被移动。可以返回首页，或前往 GitHub 查看最新项目。</p>
+    <div class="divider"></div>
+    <div class="links">
+      <a class="btn btn--primary" href="/portfolio/">返回首页</a>
+      <a class="btn btn--ghost" href="https://github.com/CharlotMuff" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+    <p class="foot">CharlotMuff &middot; Personal Portfolio</p>
+  </main>
+</body>
+</html>

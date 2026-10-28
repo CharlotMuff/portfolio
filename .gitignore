@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# 依赖与构建产物（本项目为纯静态站，不使用这些工具）
+node_modules/
+dist/
+build/
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# 日志与临时文件
+*.log
+npm-debug.log*
+yarn-error.log*
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# 本地测试输出（截图、测试脚本等，不应提交）
+.test-output/
+.test/
+
+# 部署与密钥（不要提交任何敏感信息）
+.env
+.env.local
+.netlify/
+.vercel/
