@@ -928,6 +928,45 @@ strong {
   background: radial-gradient(circle at 50% 30%, #1c2022 0%, #0e1011 70%);
 }
 
+/* --- 视频封面播放标识 --- */
+/* 纯 CSS 绘制，不引入图片资源；仅作视觉提示，语义由按钮承担 */
+.work__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3.25rem;
+  height: 3.25rem;
+  margin: -1.625rem 0 0 -1.625rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--c-accent-line);
+  border-radius: 50%;
+  background: rgba(11, 13, 12, 0.62);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  pointer-events: none;
+  transition: transform var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    background-color var(--dur-fast) var(--ease);
+}
+
+.work__play::before {
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: 0.2rem;
+  border-left: 0.72rem solid var(--c-accent);
+  border-top: 0.44rem solid transparent;
+  border-bottom: 0.44rem solid transparent;
+}
+
+.work:hover .work__play,
+.work:focus-within .work__play {
+  transform: scale(1.08);
+  border-color: var(--c-accent);
+  background: rgba(200, 127, 74, 0.22);
+}
+
 /* 作品文字区 */
 .work__body {
   flex: 1;
@@ -1368,6 +1407,83 @@ strong {
   max-width: 100%;
   max-height: 60vh;
   object-fit: contain;
+}
+
+/* --- 视频弹窗（B 站播放器） --- */
+/* 播放器容器：16:9 比例，自适应弹窗宽度 */
+.modal__visual--video {
+  align-items: stretch;
+  max-height: none;
+  border: 0;
+  background: transparent;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.85rem;
+}
+
+.player__frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #0b0d0c;
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+.player__iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.player__loading,
+.player__hint {
+  font-size: var(--fs-small);
+  line-height: 1.7;
+  color: var(--c-text-muted);
+}
+
+/* 未配置 BV 号时：用提示块替代空的播放区域，不留大片空白 */
+.player--pending .player__loading {
+  padding: clamp(1.5rem, 4vw, 2.5rem) 1.35rem;
+  text-align: center;
+  background: var(--c-bg);
+  border: 1px dashed var(--c-line-strong);
+  border-radius: var(--r-md);
+}
+
+.player__loading[hidden],
+.player__hint[hidden] {
+  display: none;
+}
+
+.player__hint {
+  padding: 0.85rem 1.05rem;
+  background: var(--c-accent-soft);
+  border-left: 2px solid var(--c-accent-line);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+}
+
+.player__fallback {
+  align-self: flex-start;
+  font-size: var(--fs-micro);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+  border-bottom: 1px solid var(--c-line-strong);
+  transition: color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease);
+}
+
+.player__fallback:hover {
+  color: var(--c-accent);
+  border-bottom-color: var(--c-accent);
 }
 
 .modal__note {

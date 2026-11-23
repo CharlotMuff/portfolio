@@ -10,7 +10,7 @@
 #                         JPG 仍为 JPG。用于控制页面体积与加载速度。
 #
 # ------------------------------------------------------------------
-# 当前 7 件作品对应关系
+# 当前 12 件作品对应关系
 # ------------------------------------------------------------------
 #  序号  作品名称                        分类        原始素材                       展示副本
 #  01    湾区明珠·双城海上游             平面设计    游轮.png                       optimized/cruise-poster.png
@@ -19,7 +19,12 @@
 #  04    2018届优秀毕业设计作品展        平面设计    14级毕业展海报.jpg             optimized/graduation-exhibition-2018.jpg
 #  05    2016级毕业设计作品展            平面设计    16级毕业展海报.jpg             optimized/graduation-exhibition-2016.jpg
 #  06    短片《返生》                    视频作品    特效短片《返生》封面.jpg       optimized/recovery-cover.jpg
-#  07    茶饮产品广告渲染                三维设计    广告渲染图.jpg                 optimized/milk-tea-3d.jpg
+#  07    其他视频作品                    视频作品    作品阐述.jpg                   optimized/other-video-cover.jpg
+#  08    AI 视频作品                     视频作品    AI视频作品封面.jpg             optimized/ai-video-cover.jpg
+#  09    茶饮产品广告渲染                三维设计    广告渲染图.jpg                 optimized/milk-tea-3d.jpg
+#  10    文旅线路宣传双折页              展会物料    双折页.jpg                     optimized/exhibition-brochure.jpg
+#  11    航线推广易拉宝                  展会物料    易拉宝展示.jpg                 optimized/exhibition-banner.jpg
+#  12    旅博会展位视觉                  展会物料    平面效果.jpg                   optimized/exhibition-booth.jpg
 #
 # ------------------------------------------------------------------
 # 新增作品时的步骤

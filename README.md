@@ -12,7 +12,7 @@
 
 ## 精选作品
 
-站点共展示 7 件作品，按分类筛选：
+站点共展示 12 件作品，按分类筛选：
 
 | 序号 | 作品名称 | 分类 | 原始素材 | 展示副本 |
 |---|---|---|---|---|
@@ -22,9 +22,14 @@
 | 04 | 2018届优秀毕业设计作品展 | 平面设计 | `assets/img/14级毕业展海报.jpg` | `assets/img/optimized/graduation-exhibition-2018.jpg` |
 | 05 | 2016级毕业设计作品展 | 平面设计 | `assets/img/16级毕业展海报.jpg` | `assets/img/optimized/graduation-exhibition-2016.jpg` |
 | 06 | 短片《返生》 | 视频作品 | `assets/img/特效短片《返生》封面.jpg` | `assets/img/optimized/recovery-cover.jpg` |
-| 07 | 茶饮产品广告渲染 | 三维设计 | `assets/img/广告渲染图.jpg` | `assets/img/optimized/milk-tea-3d.jpg` |
+| 07 | 其他视频作品 | 视频作品 | `assets/img/作品阐述.jpg` | `assets/img/optimized/other-video-cover.jpg` |
+| 08 | AI 视频作品 | 视频作品 | `assets/img/AI视频作品封面.jpg` | `assets/img/optimized/ai-video-cover.jpg` |
+| 09 | 茶饮产品广告渲染 | 三维设计 | `assets/img/广告渲染图.jpg` | `assets/img/optimized/milk-tea-3d.jpg` |
+| 10 | 文旅线路宣传双折页 | 展会策划与物料设计 | `assets/img/双折页.jpg` | `assets/img/optimized/exhibition-brochure.jpg` |
+| 11 | 航线推广易拉宝 | 展会策划与物料设计 | `assets/img/易拉宝展示.jpg` | `assets/img/optimized/exhibition-banner.jpg` |
+| 12 | 旅博会展位视觉 | 展会策划与物料设计 | `assets/img/平面效果.jpg` | `assets/img/optimized/exhibition-booth.jpg` |
 
-分类标识：`all`（全部作品）、`graphic`（平面设计，5 件）、`exhibition`（展会策划与物料设计，暂无作品）、`video`（视频作品，1 件）、`3d`（三维设计，1 件）。
+分类标识：`all`（全部作品）、`graphic`（平面设计，5 件）、`exhibition`（展会策划与物料设计，3 件）、`video`（视频作品，3 件）、`3d`（三维设计，1 件）。
 
 ---
 
